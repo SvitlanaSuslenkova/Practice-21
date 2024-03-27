@@ -1,0 +1,52 @@
+button {
+  width: 100%;
+  height: 10vw;
+  max-height: 56px;
+  background-color: hsl(223, 87%, 63%);
+  border-radius: 80px;
+  border: 0;
+  margin-top: 2vw;
+  color: white;
+  font-weight: 600;
+  font-size: 3.2vw;
+  box-shadow: 0.3em 0.3em 0.5em hsl(223, 87%, 63%, 40%);
+}
+
+button:hover {
+  opacity: 90%;
+  box-shadow: 0.2em 0.2em 0.4em hsl(223, 87%, 63%, 40%);
+}
+.errorText {
+  display: block;
+  color: red;
+  font-style: italic;
+  line-height: 250%;
+  text-align: center;
+  font-size: 3vw;
+}
+.errorInput {
+  border: 1px solid red;
+}
+/*
+.invalid {
+  border-color: red;
+}*/
+@media only screen and (min-width: 650px) {
+  form {
+    display: grid;
+    grid-template-columns: 66% 32%;
+    column-gap: 2%;
+    align-items: center;
+    align-content: center;
+  }
+  button {
+    margin-top: 0;
+    font-size: 1rem;
+    grid-row: 1;
+  }
+  .errorText {
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 32px;
+  }
+}

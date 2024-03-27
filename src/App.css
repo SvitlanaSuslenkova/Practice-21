@@ -1,0 +1,123 @@
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  padding: 22.67vw 7.5vw 9.7vw;
+}
+.app-logo {
+  display: block;
+  margin-inline: auto;
+  width: 14.27vw;
+}
+h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 6vw;
+  color: hsl(0, 0%, 59%);
+  margin-top: 10vw;
+  margin-bottom: 4.8vw;
+}
+h1 > b {
+  color: hsl(209, 33%, 12%);
+}
+.subscribe {
+  font-size: 3.2vw;
+  text-align: center;
+  margin-bottom: 5vw;
+}
+
+.illustration-dashboard {
+  width: 100%;
+  display: block;
+
+  margin-top: 5vw;
+}
+.icons {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  column-gap: 20px;
+  margin: 0 auto 4vw auto;
+}
+.fa {
+  width: 8.3vw;
+  max-width: 32px;
+  max-height: 32px;
+  aspect-ratio: 1 / 1;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 59%, 50%);
+  color: hsl(223, 87%, 63%);
+  font-size: 1em;
+}
+.fa:hover {
+  color: white;
+  background-color: hsl(223, 87%, 63%);
+}
+.copyright {
+  font-size: 3vw;
+  text-align: center;
+  color: hsl(0, 0%, 59%);
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+}
+footer {
+  padding: 9vh 0 0 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media only screen and (min-width: 650px) {
+  html {
+    font-size: 100%;
+  }
+  body {
+    padding: 0;
+    display: grid;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  main {
+    max-width: 640px;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-top: 48px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+  .subscribe {
+    font-size: 1.25rem;
+    margin-bottom: 32px;
+  }
+
+  .app-logo {
+    width: 86px;
+  }
+  .illustration-dashboard {
+    margin-bottom: 64px;
+    margin-top: 48px;
+  }
+  .icons {
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+  .copyright {
+    font-size: 1rem;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  footer {
+    display: block;
+    position: relative;
+    bottom: 0px;
+    padding-top: 5vh;
+  }
+}
